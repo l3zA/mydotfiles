@@ -22,15 +22,16 @@ brew install moreutils
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
+
 # Install a modern version of Bash.
-brew install bash
-brew install bash-completion2
+# brew install bash
+# brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
-if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
-  echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
-  chsh -s "${BREW_PREFIX}/bin/bash";
-fi;
+# if ! fgrep -q "${BREW_PREFIX}/bin/bash" /etc/shells; then
+#   echo "${BREW_PREFIX}/bin/bash" | sudo tee -a /etc/shells;
+#   chsh -s "${BREW_PREFIX}/bin/bash";
+# fi;
 
 # Install `wget` with IRI support.
 brew install wget --with-iri
@@ -96,6 +97,22 @@ brew install ssh-copy-id
 brew install tree
 brew install vbindiff
 brew install zopfli
+
+# Install my binaries
+
+brew install homebrew/cask/firefox
+brew cask install intellij-idea-ce
+brew cask install slack
+brew cask install tunnelblick
+brew cask install atom
+brew cask install postman
+brew tap adoptopenjdk/openjdk
+brew cask install adoptopenjdk8
+brew cask install zoomus
+brew cask install the-unarchiver
+brew cask install visual-studio-code
+brew install mas
+mas install 539883307
 
 # Remove outdated versions from the cellar.
 brew cleanup
