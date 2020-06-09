@@ -114,6 +114,7 @@ brew cask install visual-studio-code
 brew cask install font-meslolg-nerd-font
 brew install mas
 mas install 539883307
+mas install 1295203466
 
 # Remove outdated versions from the cellar.
 brew cleanup
