@@ -112,6 +112,7 @@ brew cask install zoomus
 brew cask install the-unarchiver
 brew cask install visual-studio-code
 brew cask install font-meslolg-nerd-font
+brew cask install sequel-pro
 brew install mas
 mas install 539883307
 mas install 1295203466
